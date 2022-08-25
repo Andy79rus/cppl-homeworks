@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.20)
+project ("Task 4.1")
+add_executable (Task.4.1 "Task 4.1.cpp" List.cpp List.h)
+add_subdirectory(Catch2 Catch2-build)
+target_link_libraries(Task.4.1 PRIVATE Catch2::Catch2)

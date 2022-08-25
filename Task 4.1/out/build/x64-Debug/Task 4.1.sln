@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{F24A19F9-1279-3779-BA51-0F2C04B03FA0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7} = {8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}
+		{8bd3552a-2cfb-4a59-ab15-2031b97ada1e} = {8bd3552a-2cfb-4a59-ab15-2031b97ada1e}
+		{66F100B1-A4BF-3878-A368-27674E90BCFB} = {66F100B1-A4BF-3878-A368-27674E90BCFB}
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20} = {8F86D9DD-5BE5-3DA9-93D8-A02011091B20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Catch2", "Catch2-build\src\Catch2.vcxproj", "{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20} = {8F86D9DD-5BE5-3DA9-93D8-A02011091B20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Catch2WithMain", "Catch2-build\src\Catch2WithMain.vcxproj", "{8bd3552a-2cfb-4a59-ab15-2031b97ada1e}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7} = {8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20} = {8F86D9DD-5BE5-3DA9-93D8-A02011091B20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task.4.1", "Task.4.1.vcxproj", "{66F100B1-A4BF-3878-A368-27674E90BCFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7} = {8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20} = {8F86D9DD-5BE5-3DA9-93D8-A02011091B20}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{8F86D9DD-5BE5-3DA9-93D8-A02011091B20}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F24A19F9-1279-3779-BA51-0F2C04B03FA0}.Debug|x64.ActiveCfg = Debug|x64
+		{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}.Debug|x64.ActiveCfg = Debug|x64
+		{8d538cbe-01bf-4a2e-a98a-6c368fdf13d7}.Debug|x64.Build.0 = Debug|x64
+		{8bd3552a-2cfb-4a59-ab15-2031b97ada1e}.Debug|x64.ActiveCfg = Debug|x64
+		{8bd3552a-2cfb-4a59-ab15-2031b97ada1e}.Debug|x64.Build.0 = Debug|x64
+		{66F100B1-A4BF-3878-A368-27674E90BCFB}.Debug|x64.ActiveCfg = Debug|x64
+		{66F100B1-A4BF-3878-A368-27674E90BCFB}.Debug|x64.Build.0 = Debug|x64
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20}.Debug|x64.ActiveCfg = Debug|x64
+		{8F86D9DD-5BE5-3DA9-93D8-A02011091B20}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4FA90FD-0BDE-391E-A9AD-473CB33B2107}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
