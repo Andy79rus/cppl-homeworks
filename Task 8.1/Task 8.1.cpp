@@ -10,7 +10,7 @@ int main()
 	auto print = [](const std::vector<int>& v) {
 		for (const auto& i : v)
 			std::cout << i << ' ';
-		std::cout << '\n';
+		std::cout << std::endl;
 	};
 
 	std::cout << "[IN]: ";
@@ -22,6 +22,8 @@ int main()
 
 	std::cout << "[OUT]: ";
 	print(vec);
+
+	std::cout << std::endl;
 
 	std::cout << "[IN]: ";
 	print(vec2);
