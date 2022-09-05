@@ -3,7 +3,7 @@
 #include <algorithm>
 
 template <class T>
-void move_vectors(T& result, T& source)
+void move_vectors(std::vector<T>& result, std::vector<T>& source)
 {
 	result.clear();
 	result.resize(source.size());
