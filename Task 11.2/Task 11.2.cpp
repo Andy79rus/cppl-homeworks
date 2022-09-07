@@ -125,5 +125,8 @@ int main()
 	result = num1 * 532345;
 	std::cout << result << std::endl;
 
+	result = num2 * 0;
+	std::cout << result << std::endl;
+
 	return 0;
 }
