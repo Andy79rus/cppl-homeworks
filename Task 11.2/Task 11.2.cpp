@@ -115,17 +115,26 @@ int main()
 
 	std::cout << result << std::endl;
 
+	for (auto const& i : num100)
+	{
+		result = result + big_integer(i);
+	}
+
+	std::cout << result << std::endl;
+
 	big_integer num1("78956129487584");
 	big_integer num2("5739001847584");
 
 	result = num1 * num2;
-
 	std::cout << result << std::endl;
 
 	result = num1 * 532345;
 	std::cout << result << std::endl;
 
-	result = num2 * 0;
+	result = num2 * 2 * 5;
+	std::cout << result << std::endl;
+
+	result = big_integer("78956129487584") * big_integer("12125739001847584") * big_integer("5739001847584");
 	std::cout << result << std::endl;
 
 	return 0;

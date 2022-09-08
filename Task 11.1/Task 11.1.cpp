@@ -3,7 +3,7 @@
 #include <algorithm>
 
 template <class T>
-void move_vectors(std::vector<T>& result, std::vector<T>& source)
+void move_vectors(std::vector<T>& source, std::vector<T>& result)
 {
 	result.clear();
 	result.resize(source.size());
@@ -22,7 +22,7 @@ int main()
 		std::cout << i << " ";
 	std::cout << std::endl;
 
-	move_vectors(two, one);
+	move_vectors(one, two);
 
 	std::cout << "two: ";
 	for (const auto& i : two)
