@@ -3,6 +3,7 @@
 
 int main()
 {
+	// === Project Euler Problem 13 begin ===
 	std::vector<std::string> num100 = {
 	"37107287533902102798797998220837590246510135740250",
 	"46376937677490009712648124896970078050417018260538",
@@ -114,6 +115,7 @@ int main()
 	}
 
 	std::cout << result << std::endl;
+	// === Project Euler Problem 13 end ===
 
 	for (auto const& i : num100)
 	{
