@@ -5,11 +5,8 @@
 template <class T>
 void move_vectors(std::vector<T>& source, std::vector<T>& result)
 {
-	result.clear();
-	result.resize(source.size());
-	auto it = result.begin();
-	for_each(source.cbegin(), source.cend(), [&it](const auto& i) {*it = i; ++it; });
-	source.clear();
+	if (&source == &result) return; // нет нужды перемещеать самих в себя
+	result = std::move(source);
 }
 
 int main()
@@ -29,8 +26,10 @@ int main()
 		std::cout << i << " ";
 	std::cout << std::endl;
 
-	std::cout << "one: ";
-	for (const auto& i : one)
+	move_vectors(two, two);
+
+	std::cout << "two: ";
+	for (const auto& i : two)
 		std::cout << i << " ";
 	std::cout << std::endl;
 
